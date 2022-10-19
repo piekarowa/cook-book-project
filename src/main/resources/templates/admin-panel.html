@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
+</head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Admin panel</h1>
+
+Logged as <p sec:authentication="name"/>
+
+<td><a th:href="@{/logout}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true" >Logout</a></td>
+<td><a th:href="@{/}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true" >Show all recipes</a></td>
+
+
+</body>
+</html>
